@@ -1,0 +1,436 @@
+/***********************
+ *     PARAMETRAGE     *
+ ***********************/
+
+#eticeo-categories-list {
+    display: grid;
+}
+#eticeo-categories-list .categories-option {
+    border-radius: 10px;
+    background-color: white!important;
+    color: black;
+    border: 1px solid #dadada;
+    cursor: move;
+    min-height: 40px;
+    padding: 10px;
+    width: 60%;
+    margin-bottom: 5px;
+    height: 100%;
+}
+
+.category-select-list>div:last-child {
+    display: inline-grid;
+}
+
+.category-select-list>div:last-child select {
+    width: min-content;
+}
+
+#eticeo-categories-list {
+    border: 1px solid #dadada;
+    padding: 10px;
+    border-radius: 7px;
+}
+#eticeo-categories-list i {
+    float: right;
+    cursor: pointer!important;
+}
+
+.category-select-list .form-autocomplete-suggestions {
+    position: inherit!important;
+}
+
+.student-focus-categories-block {
+    margin-left:10px!important;
+}
+
+#fitem_id_config_cohorts_enabled {
+    display: none;
+}
+
+#eticeo-categories-list .chosen-container {
+    min-width: 400px!important;
+}
+
+/***********************
+ *     D&D SELECT      *
+ ***********************/
+
+[id^="eticeo-dd-options-list"] {
+    display: grid;
+}
+[id^="eticeo-dd-options-list"] .options-option {
+    border-radius: 10px;
+    background-color: white!important;
+    color: black;
+    border: 1px solid #dadada;
+    cursor: move;
+    height: 40px;
+    padding: 10px;
+    width: 500px;
+    margin-bottom: 5px;
+}
+
+.dd-config_student_focus_categories_params.drag-and-drop-select-list>div:last-child {
+    display: inline-grid;
+}
+
+.dd-config_student_focus_categories_params.drag-and-drop-select-list>div:last-child select {
+    width: min-content;
+}
+
+[id^="eticeo-dd-options-list"] {
+    border: 1px solid #dadada;
+    padding: 10px;
+    border-radius: 7px;
+}
+[id^="eticeo-dd-options-list"] i {
+    float: right;
+    cursor: pointer!important;
+}
+
+.dd-config_student_focus_categories_params.drag-and-drop-select-list .form-autocomplete-suggestions {
+    position: inherit!important;
+}
+
+.options-homepage-block {
+    margin-left:10px!important;
+}
+
+.select2-results__option--disabled {
+    display:none;
+}
+
+/***********************
+ *   END D&D SELECT    *
+ ***********************/
+
+
+/***********************
+ *      BLOCK TITLE    *
+ ***********************/
+
+.student-focus-categories-block > h2 {
+    width: 100%;
+    border-bottom: 2px solid var(--title_color);
+    color: var(--title_color);
+    margin-bottom: 30px;
+}
+
+.student-focus-categories-block > h2 > .icon-title {
+    margin-right: 30px;
+}
+
+
+/***********************
+ *     LIST GENERAL    *
+ ***********************/
+
+.block_student_focus_categories {
+    border:none!important;
+    padding-bottom: 0px!important;
+    margin-bottom: 0px!important;
+}
+
+
+.category-homepage-list .category-image img {
+    cursor: auto!important;
+}
+.category-homepage-list {
+    width: 100%;
+}
+.category-homepage-list:not(:first-of-type) {
+    border-top: 1px solid #dadada;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+@media (max-width: 530px) {
+    .student-focus-categories-block {
+        justify-content: center!important;
+    }
+
+    .category-homepage-list {
+        margin-left: 0px!important;
+        justify-content: center!important;
+    }
+
+    .block_student_focus_categories {
+        padding-left: 0px!important;
+    }
+}
+
+/***********************
+ *       LIST TOP      *
+ ***********************/
+
+.category-homepage-list .category-image .mediaplugin,
+.category-homepage-list .category-image img {
+    width: 200px;
+    height: 100%;
+    margin: 0px!important;
+    object-fit: cover;
+}
+
+.category-homepage-list .category-image .mediaplugin .vjs-big-play-button {
+    top: 40%;
+    left: 40%;
+    background: var(--player_color);
+    opacity: 0.8;
+    width: 70px;
+    border: none;
+    border-radius: 15px;
+}
+
+.category-homepage-list .category-image .mediaplugin .vjs-big-play-button .vjs-icon-placeholder:before {
+   font-size: 50px;
+}
+
+
+/***********************
+ *     PROGRESSION     *
+ ***********************/
+
+.category-homepage-list .category_progression circle {
+    fill:  var(--background_color);
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.4));
+}
+
+.category-homepage-list .category_progression{
+    fill: var(--font_color);
+    width: 100px;
+}
+
+
+/******************
+ *  TABLEAU  *
+ ******************/
+
+.student-focus-categories-block .categorie-num {
+    font-size: 25px;
+}
+
+.student-focus-categories-block .categorie-name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.student-focus-categories-block th,
+.student-focus-categories-block .title {
+    color: black!important;
+    font-size: 15px;
+}
+
+.student-focus-categories-block .container-data .title {
+    border-top: 1px solid #dadada;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-right: 30px;
+    padding-top: 10px;
+    width: auto;
+    min-width: 200px;
+    flex-wrap: wrap;
+}
+
+.student-focus-categories-block .courses-table th {
+    text-align: center;
+}
+
+.student-focus-categories-block .courses-table th i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.student-focus-categories-block .courses-table th i:hover {
+    cursor: pointer;
+    color: #dadada;
+}
+
+.student-focus-categories-block [class$="_data"] {
+    cursor: pointer;
+    color: #132f5b;
+    font-size: 15px;
+    font-weight: bold;
+    min-width: 130px;
+    height: 100%!important;
+    display: flex;
+    flex-wrap: wrap;
+}
+.student-focus-categories-block td:not(.col_sequence_name) [class$="_data"] {
+    justify-content: center;
+}
+.student-focus-categories-block tr[class^="course-line-"] td {
+    width: 15%;
+}
+
+.student-focus-categories-block .container-data [class$="_data"] {
+    display: flex;
+    justify-content: center;
+}
+
+.student-focus-categories-block .final_grade_data  {
+    text-align: center;
+}
+
+.student-focus-categories-block td.container-data {
+    display: none;
+}
+
+.student-focus-categories-block .col_image img {
+    width: 60px!important;
+}
+
+@media (max-width: 1400px) {
+
+    .student-focus-categories-block thead tr {
+        display: none!important;
+    }
+
+    .student-focus-categories-block tr {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .student-focus-categories-block td.container-data {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%!important;
+        margin-right: 0px!important;
+        margin-bottom: 20px!important;
+        justify-content: center;
+    }
+
+    .student-focus-categories-block .category_progression  {
+        width: 100px;
+    }
+
+    .student-focus-categories-block [data-primary="false"] {
+        display: none;
+    }
+
+    .student-focus-categories-block .col_sequence_name .foldCourse {
+        display: none;
+    }
+
+    .student-focus-categories-block .col_sequence_name,
+    .student-focus-categories-block .col_image {
+        width: 100%;
+        min-width: 130px;
+    }
+
+    .student-focus-categories-block .col_image .img-course {
+        width: 100%;
+    }
+
+    .student-focus-categories-block .deployCourse,
+    .student-focus-categories-block .foldCourse {
+        width: 100%;
+        margin-right: 0px!important;
+        margin-left: 0px!important;
+        min-width: 140px;
+    }
+
+    .student-focus-categories-block .sequence_name_data {
+        line-height: 0px;
+    }
+
+    .student-focus-categories-block .col_sequence_name {
+        padding-top: 5px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .student-focus-categories-block .container-data {
+        display: none;
+    }
+
+    .student-focus-categories-block .col_sequence_name .deployCourse,
+    .student-focus-categories-block .col_sequence_name .foldCourse {
+        display: none!important;
+    }
+}
+
+
+.student-focus-categories-block .image_data {
+    width: 240px!important;
+}
+
+.student-focus-categories-block .img-course {
+    width: 200px;
+    object-fit: cover;
+    height: 120px;
+}
+
+.student-focus-categories-block .sequence_name_data {
+    min-width: 300px;
+    text-align: left!important;
+}
+
+.student-focus-categories-block .courses-table {
+    margin: auto;
+    border-spacing: 5px;
+    width: 100%;
+}
+
+.student-focus-categories-block .category_progression {
+    max-width: 60px!important;
+}
+
+.student-focus-categories-block .obtained_badges_data {
+    display: flex;
+    align-items: center;
+}
+
+.student-focus-categories-block .badge-not-obtained img,
+.student-focus-categories-block .badge-obtained img {
+    width: 50px;
+    font-size: 10px;
+}
+
+.student-focus-categories-block .badge-not-obtained {
+    opacity: 0.5;
+}
+
+.student-focus-categories-block [class^="badge-"] {
+    width: 60px!important;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.student-focus-categories-block .grade-unavailable {
+    font-size: 50px;
+}
+
+.student-focus-categories-block .col_sequence_name .deployCourse,
+.student-focus-categories-block .col_sequence_name .foldCourse {
+    background-color: #285baa;
+    color: white!important;
+    padding: 10px 30px;
+    border: none;
+    box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);
+    margin: 10px 30px;
+}
+.student-focus-categories-block .col_sequence_name .deployCourse:hover,
+.student-focus-categories-block .col_sequence_name .foldCourse:hover {
+    background-color: #173360!important;
+}
+.student-focus-categories-block .eticeo-close {
+    position: absolute;
+    right: 30px;
+    color: white !important;
+    position: absolute;
+    right: 30px;
+    color: white!important;
+    font-size: 40px;
+    padding: 0px;
+    top: -10px;
+}
