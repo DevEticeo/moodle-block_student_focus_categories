@@ -583,7 +583,9 @@ class block_student_focus_categories extends block_base
         $filesArray =  $fs->get_area_files($syscontext->id, 'block_student_focus_categories', 'content');
         if (count($filesArray) > 0) {
             $file = array_pop($filesArray);
-	        $imageUrl = moodle_url::make_pluginfile_url($syscontext->id, 'block_student_focus_categories', 'content', $file->get_id(), $file->pathname,$file->filename);
+            $pathname = $file && isset($file->pathname) ? $file->pathname : '';
+            $filename = $file && isset($file->filename) ? $file->filename : '';
+	        $imageUrl = moodle_url::make_pluginfile_url($syscontext->id, 'block_student_focus_categories', 'content', $file->get_id(), $pathname, $filename);
 
             return '<img src="'.$imageUrl.'">';
         }

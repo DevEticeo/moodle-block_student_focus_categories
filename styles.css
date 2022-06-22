@@ -235,7 +235,7 @@
     flex-wrap: wrap;
 }
 
-.student-focus-categories-block .courses-table th {
+.student-focus-categories-block .courses-table th:not(.col_sequence_name) {
     text-align: center;
 }
 
@@ -280,7 +280,7 @@
 }
 
 .student-focus-categories-block .col_image img {
-    width: 60px!important;
+    width: 120px!important;
 }
 
 @media (max-width: 1400px) {
